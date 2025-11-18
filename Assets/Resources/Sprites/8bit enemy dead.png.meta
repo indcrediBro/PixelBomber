@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: d6a8600c83b2c3348ac97c84e8d7b094
+guid: 596b87c81b21fbe46ab12b3eb3c049bc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5349040897770917861
-    second: House 1bit (1)_0
+      213: 6728291273501180112
+    second: 8bit enemy dead_0
+  - first:
+      213: -1662372076394417697
+    second: 8bit enemy dead_1
+  - first:
+      213: 2442309179128465356
+    second: 8bit enemy dead_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,11 +106,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: House 1bit (1)_0
+      name: 8bit enemy dead_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 8
         width: 8
         height: 8
       alignment: 0
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ef0ca82b5c9b3a40800000000000000
-      internalID: 5349040897770917861
+      spriteID: 0d00666e341bf5d50800000000000000
+      internalID: 6728291273501180112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8bit enemy dead_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd17bf577611ee8e0800000000000000
+      internalID: -1662372076394417697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8bit enemy dead_2
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc7c0ad2243d4e120800000000000000
+      internalID: 2442309179128465356
       vertices: []
       indices: 
       edges: []
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      House 1bit (1)_0: 5349040897770917861
+      8bit enemy dead_0: 6728291273501180112
+      8bit enemy dead_1: -1662372076394417697
+      8bit enemy dead_2: 2442309179128465356
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

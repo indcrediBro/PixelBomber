@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d6a8600c83b2c3348ac97c84e8d7b094
+guid: 978669c47f8dbae419a1d435b16a36ea
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5349040897770917861
-    second: House 1bit (1)_0
+      213: -1572391234087474867
+    second: brick_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -47,7 +47,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: House 1bit (1)_0
+      name: brick_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 8
-        height: 8
+        width: 7
+        height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5ef0ca82b5c9b3a40800000000000000
-      internalID: 5349040897770917861
+      spriteID: d492744e08ebd2ae0800000000000000
+      internalID: -1572391234087474867
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: da240c147f6c0074980af8f65fa8d8db
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      House 1bit (1)_0: 5349040897770917861
+      brick_0: -1572391234087474867
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
