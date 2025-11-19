@@ -14,8 +14,10 @@ public class Brick : MonoBehaviour
                 .transform;
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
+        if (brickExplodeEffect == null) return;
+        
         brickExplodeEffect.SetParent(null);
         brickExplodeEffect.gameObject.SetActive(true);
     }

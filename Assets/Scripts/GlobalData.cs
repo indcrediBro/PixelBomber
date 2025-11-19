@@ -7,6 +7,7 @@ public class GlobalData : MonoBehaviour
     [SerializeField] private Sprite[] brickSprites;
     [SerializeField] private float moveSpeed;
     [SerializeField] private GameObject bombPrefab;
+    [SerializeField] private GameObject bombExplosionPrefab;
     [SerializeField] private GameObject brickExplosionPrefab;
     [SerializeField] private int maxBombCount;
     [SerializeField] private float bombTimeToExplode;
@@ -31,6 +32,11 @@ public class GlobalData : MonoBehaviour
         return bombPrefab;
     }
 
+    public GameObject GetBombExplosionPrefab()
+    {
+        return bombExplosionPrefab;
+    }
+    
     public GameObject GetBrickExplosionPrefab()
     {
         return brickExplosionPrefab;

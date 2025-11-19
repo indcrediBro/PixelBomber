@@ -6,19 +6,17 @@ public class Bomb: MonoBehaviour
 {
     private PlayerController playerController;
     [SerializeField] private TMPro.TMP_Text timerText;
-    private float timeToExplode; 
+    private float timeToExplode;
+    private GameObject bombExplosionEffect;
 
     public void Init(PlayerController _playerController)
     {
         playerController = _playerController;
         timeToExplode = GlobalData.Instance.GetTimeToExplode();
+        bombExplosionEffect = Instantiate(GlobalData.Instance.GetBombExplosionPrefab(), transform.position,
+            Quaternion.identity,transform);
     }
-
-    private void Start()
-    {
-        // Destroy(this,timeToExplode);
-    }
-
+    
     private void Update()
     {
         timeToExplode-= Time.deltaTime;
@@ -27,12 +25,11 @@ public class Bomb: MonoBehaviour
         if (timeToExplode <= 0)
         {
             playerController.BombExploded(gameObject);
+            bombExplosionEffect.SetActive(true);
+            bombExplosionEffect.transform.SetParent(null);
             Destroy(gameObject);
         }
     }
-
-    private void OnDisable()
-    {
-        // playerController.BombExploded(gameObject);
-    }
+    
+    
 }
