@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 20a1c0790634a5f4782fb1ef57b31143
+guid: fed62f0e41e3d1546a1af6c3658f56fa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8043525923945261003
-    second: 8bit stickman + bomb_0
+      213: 5832171855535021699
+    second: bricks_0
   - first:
-      213: -3984004305490068985
-    second: 8bit stickman + bomb_1
-  - first:
-      213: -6712765929408194499
-    second: 8bit stickman + bomb_2
+      213: -448948775454354536
+    second: bricks_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -53,7 +50,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -106,12 +103,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 8bit stickman + bomb_0
+      name: bricks_0
       rect:
         serializedVersion: 2
         x: 0
         y: 8
-        width: 7
+        width: 8
         height: 8
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -121,14 +118,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 538d891e9c7af5090800000000000000
-      internalID: -8043525923945261003
+      spriteID: 38e1236076900f050800000000000000
+      internalID: 5832171855535021699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 8bit stickman + bomb_1
+      name: bricks_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89352b4a77305c9f0800000000000000
+      internalID: -448948775454354536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bricks_2
       rect:
         serializedVersion: 2
         x: 8
@@ -136,103 +155,37 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 70a33ab3139f5b8c0800000000000000
-      internalID: -3984004305490068985
+      spriteID: d44810df8aed4744484a013a94ee9feb
+      internalID: 2038194684
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 8bit stickman + bomb_2
+      name: bricks_3
       rect:
         serializedVersion: 2
-        x: 0
+        x: 8
         y: 0
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d389745f3f677d2a0800000000000000
-      internalID: -6712765929408194499
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 8bit stickman + bomb_3
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 8
-        width: 7
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9032072fd2d14134984fb4bd597f5b82
-      internalID: -1754149464
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 8bit stickman + bomb_4
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 0
-        width: 7
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8a821ef5a69117143b28b2d7ea42916d
-      internalID: -906075109
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 8bit stickman + bomb_5
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 0
-        width: 7
-        height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f82dbfd4f5d084b4889f68718aefb02f
-      internalID: 1803477948
+      spriteID: d02ad6a654e1abd4aa234c7c0c15a459
+      internalID: -382214882
       vertices: []
       indices: 
       edges: []
@@ -241,7 +194,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1225f7506a5913c47aeea354672a8c8f
+    spriteID: 8896e7aab298f2f4db782faa86499bd2
     internalID: 0
     vertices: []
     indices: 
@@ -251,12 +204,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      8bit stickman + bomb_0: -8043525923945261003
-      8bit stickman + bomb_1: -3984004305490068985
-      8bit stickman + bomb_2: -6712765929408194499
-      8bit stickman + bomb_3: -1754149464
-      8bit stickman + bomb_4: -906075109
-      8bit stickman + bomb_5: 1803477948
+      bricks_0: 5832171855535021699
+      bricks_1: -448948775454354536
+      bricks_2: 2038194684
+      bricks_3: -382214882
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
