@@ -2531,7 +2531,7 @@ MonoBehaviour:
   - {fileID: -382214882, guid: fed62f0e41e3d1546a1af6c3658f56fa, type: 3}
   moveSpeed: 2.5
   bombPrefab: {fileID: 3551697730352233208, guid: 18a5e3282cd1ae8498462bae2568c102, type: 3}
-  maxBombCount: 2
+  maxBombCount: 1
   bombTimeToExplode: 4
 --- !u!4 &970103556
 Transform:
@@ -3881,7 +3881,7 @@ GameObject:
   m_Layer: 0
   m_Name: Bomb Drop Position
   m_TagString: Untagged
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -4290,7 +4290,7 @@ GameObject:
   m_Layer: 0
   m_Name: Bomb Position
   m_TagString: Untagged
-  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
