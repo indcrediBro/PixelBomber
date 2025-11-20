@@ -6,9 +6,9 @@ public class Brick : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
     private Transform brickExplodeEffect;
     
-    private void Start()
+    public void Initialize(Sprite _sprite)
     {
-        spriteRenderer.sprite = GlobalData.Instance.GetRandomBrickSprite();
+        spriteRenderer.sprite = _sprite;
         brickExplodeEffect =
             Instantiate(GlobalData.Instance.GetBrickExplosionPrefab(), transform.position, Quaternion.identity)
                 .transform;

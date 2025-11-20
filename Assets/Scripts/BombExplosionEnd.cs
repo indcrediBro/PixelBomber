@@ -19,6 +19,11 @@ public class BombExplosionEnd : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if (other.tag == "Enemy")
+        {
+            Destroy(other.gameObject);
+        }
+        
         if (other.tag == "Player")
         {
             Destroy(other.gameObject);

@@ -5,10 +5,13 @@ public class GlobalData : MonoBehaviour
     public static GlobalData Instance;
 
     [SerializeField] private Sprite[] brickSprites;
-    [SerializeField] private float moveSpeed;
+    [SerializeField] private float playerMoveSpeed;
     [SerializeField] private GameObject bombPrefab;
     [SerializeField] private GameObject bombExplosionPrefab;
+    [SerializeField] private GameObject brickPrefab;
     [SerializeField] private GameObject brickExplosionPrefab;
+    [SerializeField] private GameObject playerPrefab;
+    [SerializeField] private GameObject enemyPrefab;
     [SerializeField] private int maxBombCount;
     [SerializeField] private float bombTimeToExplode;
     
@@ -22,9 +25,24 @@ public class GlobalData : MonoBehaviour
         return brickSprites[Random.Range(0, brickSprites.Length)];
     }
 
+    public GameObject GetBrickPrefab()
+    {
+        return brickPrefab;
+    }
+
+    public GameObject GetPlayerPrefab()
+    {
+        return playerPrefab;
+    }
+    
+    public GameObject GetEnemyPrefab()
+    {
+        return enemyPrefab;
+    }
+
     public float GetPlayerMoveSpeed()
     {
-        return moveSpeed;
+        return playerMoveSpeed;
     }
 
     public GameObject GetBombPrefab()
