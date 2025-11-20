@@ -6,16 +6,17 @@ TagManager:
   tags:
   - Block
   - Brick
+  - Enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Bomb
+  - Brick
+  - Block
   - 
   - 
   - 
