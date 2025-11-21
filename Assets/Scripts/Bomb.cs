@@ -27,6 +27,8 @@ public class Bomb: MonoBehaviour
             playerController.BombExploded(gameObject);
             bombExplosionEffect.SetActive(true);
             bombExplosionEffect.transform.SetParent(null);
+            GameEvents.BombExploded();
+            AudioManager.Instance.PlaySound("Explode");
             Destroy(gameObject);
         }
     }

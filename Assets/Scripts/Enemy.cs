@@ -28,6 +28,8 @@ public class Enemy:MonoBehaviour
 
     private void FixedUpdate()
     {
+        if(GameManager.Instance.currentState != GameState.Game) return;
+        
         SpeedCheck();
         DecideDirection();
         MoveEnemy();
@@ -91,13 +93,20 @@ public class Enemy:MonoBehaviour
     {
         List<Vector2> validDirections = GetAllPossibleDirections();
         int r = Random.Range(0, validDirections.Count);
-        if (validDirections[r] != currentDirection)
+        if (validDirections.Count == 0)
         {
-            currentDirection = validDirections[r];
+            //Do Nothing
         }
-        else
+        else if (validDirections.Count > 0)
         {
-            currentDirection *= -1;
+            if (validDirections[r] != currentDirection)
+            {
+                currentDirection = validDirections[r];
+            }
+            else
+            {
+                currentDirection *= -1;
+            }
         }
     }
 

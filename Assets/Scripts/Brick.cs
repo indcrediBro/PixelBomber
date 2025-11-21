@@ -18,6 +18,7 @@ public class Brick : MonoBehaviour
     {
         if (brickExplodeEffect == null) return;
         
+        AudioManager.Instance.PlaySound("Brick");
         brickExplodeEffect.SetParent(null);
         brickExplodeEffect.gameObject.SetActive(true);
     }

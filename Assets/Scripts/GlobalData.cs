@@ -1,9 +1,7 @@
 using UnityEngine;
 
-public class GlobalData : MonoBehaviour
+public class GlobalData : Singleton<GlobalData>
 {
-    public static GlobalData Instance;
-
     [SerializeField] private Sprite[] brickSprites;
     [SerializeField] private float playerMoveSpeed;
     [SerializeField] private GameObject bombPrefab;
@@ -14,12 +12,7 @@ public class GlobalData : MonoBehaviour
     [SerializeField] private GameObject enemyPrefab;
     [SerializeField] private int maxBombCount;
     [SerializeField] private float bombTimeToExplode;
-    
-    private void Awake()
-    {
-        Instance =  this;
-    }
-
+ 
     public Sprite GetRandomBrickSprite()
     {
         return brickSprites[Random.Range(0, brickSprites.Length)];

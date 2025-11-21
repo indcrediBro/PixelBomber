@@ -11,16 +11,19 @@ public class LevelGenerator: MonoBehaviour
     
     private void Start()
     {
-        GenerateLevel();
     }
 
     public void GenerateLevel()
     {
         LevelData currentLevel = GetRandomLevel();
-        activeLevel = Instantiate(currentLevel, Vector3.zero, Quaternion.identity).gameObject;
+        activeLevel = Instantiate(currentLevel, Vector3.zero, Quaternion.identity, transform).gameObject;
         Sprite brickSprite = GlobalData.Instance.GetRandomBrickSprite();
         bool playerSpawned = false;
-        
+        GameObject bricks = new GameObject("Bricks");
+        bricks.transform.SetParent(activeLevel.transform);
+        GameObject enemies = new GameObject("Enemies");
+        enemies.transform.SetParent(activeLevel.transform);
+
         for (int i = 0; i < currentLevel.possibleSpawnPoints.Length; i++)
         {
             int r = Random.Range(0, 100);
@@ -28,19 +31,19 @@ public class LevelGenerator: MonoBehaviour
             if (r < brickSpawnRate && r > enemySpawnRate)
             {
                 Brick b = Instantiate(GlobalData.Instance.GetBrickPrefab(),
-                    currentLevel.possibleSpawnPoints[i].position, Quaternion.identity).GetComponent<Brick>();
+                    currentLevel.possibleSpawnPoints[i].position, Quaternion.identity,bricks.transform).GetComponent<Brick>();
                 
                 b.Initialize(brickSprite);
             }
             else if (r < enemySpawnRate)
             {
                 Enemy e = Instantiate(GlobalData.Instance.GetEnemyPrefab(),
-                    currentLevel.possibleSpawnPoints[i].position, Quaternion.identity).GetComponent<Enemy>();
+                    currentLevel.possibleSpawnPoints[i].position, Quaternion.identity,enemies.transform).GetComponent<Enemy>();
             }
             else if(!playerSpawned)
             {
                 Instantiate(GlobalData.Instance.GetPlayerPrefab(), currentLevel.possibleSpawnPoints[i].position,
-                    Quaternion.identity);
+                    Quaternion.identity,activeLevel.transform);
                 playerSpawned = true;
             }
         }
