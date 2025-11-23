@@ -181,4 +181,4 @@ MonoBehaviour:
     m_Bits: 8
   rb: {fileID: 5459483488788287955}
   moveSpeed: 0.8
-  attackSpeed: 1.5
+  attackSpeed: 0

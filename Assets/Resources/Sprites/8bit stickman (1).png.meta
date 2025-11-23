@@ -99,6 +99,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -146,6 +159,94 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: 8bit stickman head
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 11
+        width: 5
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fcbe1fee1013b242bbca60cc1152de5
+      internalID: 1393024136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8bit stickman torso
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 10
+        width: 1
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb5b6eda429d2314f876014115e3dc3d
+      internalID: 211522949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8bit stickman leg
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 3
+        width: 1
+        height: 2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab957482050eb141ac5ff35e9b71b90
+      internalID: 899419993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 8bit stickman arm
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 3
+        width: 3
+        height: 2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb189f44d34845b40ac66fe02e38d043
+      internalID: 1356163931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -162,10 +263,13 @@ TextureImporter:
     nameFileIdTable:
       8bit stickman (1)_0: 3280656404926971563
       8bit stickman (1)_1: 6419112276179408578
-      8bit stickman (1)_2: 1632442899
       8bit stickman (1)_3: -1124641725
       8bit stickman (1)_4: 1515646660
       8bit stickman (1)_5: -163046500
+      8bit stickman arm: 1356163931
+      8bit stickman head: 1632442899
+      8bit stickman leg: 899419993
+      8bit stickman torso: 211522949
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
