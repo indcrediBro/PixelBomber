@@ -36,6 +36,7 @@ public class Brick : MonoBehaviour
         AudioManager.Instance.PlaySound("Brick");
         brickExplodeEffect.SetParent(null);
         brickExplodeEffect.gameObject.SetActive(true);
+        ScoreManager.Instance.AddScore(100, transform.position);
         
         Destroy(gameObject);
     }

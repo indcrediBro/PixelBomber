@@ -30,6 +30,7 @@ public class LevelGenerator: MonoBehaviour
         GameObject enemies = new GameObject("Enemies");
         enemies.transform.SetParent(activeLevel.transform);
         GlobalData.Instance.spawnedEnemies = new List<Enemy>();
+        enemySpawnRate = LevelManager.Instance.levelClearIndex * 1.1f;
         
         for (int i = 0; i < currentLevel.possibleSpawnPoints.Length; i++)
         {

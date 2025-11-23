@@ -9,7 +9,7 @@ public class ExtraRange: MonoBehaviour, PowerUp
 
     private void GiveExtraExplosionRange()
     {
-        Debug.Log("Extending Range");
+        ScoreManager.Instance.AddScore(500, transform.position);
         GlobalData.Instance.IncreaseBombExplosionRangeLimit();
         Destroy(gameObject);
     }

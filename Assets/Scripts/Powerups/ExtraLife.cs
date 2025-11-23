@@ -9,7 +9,7 @@ public class ExtraLife : MonoBehaviour, PowerUp
 
     private void GiveExtraLife()
     {
-        Debug.Log("Extending Life");
+        ScoreManager.Instance.AddScore(500, transform.position);
         GlobalData.Instance.IncreaseCurrentHealthLimit();
         Destroy(gameObject);
     }

@@ -88,8 +88,10 @@ public class Bomb : MonoBehaviour
         foreach (var hit in hits)
         {
             if (hit.collider.CompareTag("Enemy"))
-            {
+            { 
+                ScoreManager.Instance.AddScore(1000, hit.collider.transform.position);
                 Destroy(hit.collider.gameObject);
+                
             }
 
             if (hit.collider.CompareTag("Brick"))
@@ -106,6 +108,7 @@ public class Bomb : MonoBehaviour
 
             if (hit.collider.CompareTag("Bomb") && hit.collider != GetComponent<Collider2D>())
             {
+                ScoreManager.Instance.AddScore(10, hit.collider.transform.position);
                 hit.collider.GetComponent<Bomb>().Explode();
             }
         }

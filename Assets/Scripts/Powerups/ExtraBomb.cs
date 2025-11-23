@@ -10,7 +10,7 @@ public class ExtraBomb : MonoBehaviour, PowerUp
 
     private void GiveExtraBomb()
     {
-        Debug.Log("Extending Bombs");
+        ScoreManager.Instance.AddScore(500, transform.position);
         GlobalData.Instance.IncreaseBombLimit();
         Destroy(gameObject);
     }

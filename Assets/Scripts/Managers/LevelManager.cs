@@ -6,7 +6,8 @@ public class LevelManager: Singleton<LevelManager>
 {
     [SerializeField] private LevelGenerator levelGenerator;
     private GlobalData globalData;
-
+    public int levelClearIndex = 0;
+    
     private void Start()
     {
         globalData = GlobalData.Instance;
@@ -40,6 +41,7 @@ public class LevelManager: Singleton<LevelManager>
     public void ClearLevel()
     {
         LoadLevel();
+        levelClearIndex++;
     }
 
     public void ToggleLevel()

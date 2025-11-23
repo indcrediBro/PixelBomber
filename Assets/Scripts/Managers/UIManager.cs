@@ -7,7 +7,7 @@ public class UIManager : Singleton<UIManager>
     [SerializeField] private GameObject gameUI;
     [SerializeField] private GameObject pauseMenuUI;
     [SerializeField] private GameObject gameOverUI;
-
+    [SerializeField] private GameObject leaderboardUI;
     [SerializeField] private TMP_Text[] scoresUI, bestScoresUI, livesUI, timerUI;
 
     private void OnEnable()
@@ -39,6 +39,11 @@ public class UIManager : Singleton<UIManager>
         gameOverUI.SetActive(false);
         pauseMenuUI.SetActive(false);
 
+    }
+
+    public void ShowHideLeaderboardUI()
+    {
+        leaderboardUI.SetActive(!leaderboardUI.activeSelf);
     }
 
     public void ShowGameOver()

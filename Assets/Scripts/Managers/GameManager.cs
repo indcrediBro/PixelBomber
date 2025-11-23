@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public enum GameState { MainMenu, Game , Pause, GameOver }
 
@@ -55,9 +56,10 @@ public class GameManager : Singleton<GameManager>
 
         if (Input.GetButtonDown("Cancel"))
         {
-            if (currentState == GameState.MainMenu)
+            if (currentState == GameState.MainMenu ||  currentState == GameState.GameOver)
             {
-                // UIManager.Instance.ShowLeaderboard();
+                Debug.Log("SHOWING lEADERBOARD");
+                UIManager.Instance.ShowHideLeaderboardUI();
             }
             else if (currentState == GameState.Pause)
             {
@@ -72,6 +74,11 @@ public class GameManager : Singleton<GameManager>
                 ChangeState(GameState.Pause);
             }
         }
+
+        if (Input.GetButtonDown("Submit") &&  (currentState == GameState.Pause || currentState == GameState.GameOver))
+        {
+            RefreshScene();
+        }
     }
 
     public void StartGame()
@@ -85,5 +92,10 @@ public class GameManager : Singleton<GameManager>
     {
         LevelManager.Instance.ToggleLevel();
         ChangeState(GameState.GameOver);
+    }
+
+    public void RefreshScene()
+    {
+        SceneManager.LoadScene(0);
     }
 }
